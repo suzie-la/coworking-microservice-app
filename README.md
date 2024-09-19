@@ -16,7 +16,7 @@ The Coworking Space Service Analytics API provides business analysts with basic 
 
 ## Deployment Process
 
-1. **Database Setup:** We use the Bitnami Helm chart to deploy PostgreSQL in the Kubernetes cluster.
+**1. Database Setup:** We use the Bitnami Helm chart to deploy PostgreSQL in the Kubernetes cluster.
 NB: After adding the Helm repository, modify the values.yaml file to add the database configuration, the storageclass for your eks cluster and the persistent volume configuration. Retrieve the password that will be used to connect to the database to run seed files.
 
 **2. Docker image Build:** Create the Dockerfile with the instructions to build the image. After building the image, push it to ECR
